@@ -1,0 +1,33 @@
+{
+  "name": "Pretty JSON",
+  "version": "0.0.0",
+  "description": "Pretty JSON",
+  "homepage_url": "https://github.com/vinkla/pretty-json",
+  "manifest_version": 2,
+  "minimum_chrome_version": "60",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "webRequest",
+    "<all_urls>"
+  ],
+  "icons": {
+		"128": "icon.png"
+	},
+  "background": {
+    	"scripts": [
+        "background.js"
+      ]
+  },
+  "content_scripts": [
+		{
+			"run_at": "document_start",
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	]
+}
