@@ -1,12 +1,11 @@
 {
-  "name": "Pretty JSON",
-  "version": "0.0.0",
-  "description": "Pretty JSON",
-  "homepage_url": "https://github.com/vinkla/pretty-json",
+  "name": "Yayson",
+  "version": "0.1.0",
+  "description": "Simple JSON viewer for the browser.",
+  "homepage_url": "https://github.com/vinkla/yayson",
   "manifest_version": 2,
-  "minimum_chrome_version": "60",
+  "minimum_chrome_version": "69",
   "permissions": [
-    "tabs",
     "activeTab",
     "webRequest",
     "<all_urls>"

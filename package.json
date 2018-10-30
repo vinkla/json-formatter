@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "del build/*.map && rollup --config --environment NODE_ENV:production",
+    "build": "rollup --config --environment NODE_ENV:production",
     "start": "rollup --config --watch",
     "test": "semistandard --verbose **/*.js | snazzy"
   },
@@ -11,7 +11,6 @@
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
-    "del-cli": "^1.1.0",
     "rollup": "^0.66.6",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.2.0",
