@@ -1,12 +1,12 @@
-# Yayson
+# Yayson ![Chrome Web Store](https://badgen.net/chrome-web-store/v/ckkdlimhmcjmikdlpkmbgfkaikojcbjk)
 
 > A simple JSON formatter for the browser.
 
-This extension formats and prettifies JSON data in Google Chrome.
+This extension formats and prettifies JSON data in Google Chrome. To install the extension, [visit the Chrome Web Store]().
 
 ### Features
 
-- Formats JSON using built-in [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) methods.
+- Formats JSON data using [built-in methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON).
 - Linkify URLs using the [`linkify-urls`](https://github.com/sindresorhus/linkify-urls#readme) package.
 
 ## Contributing
