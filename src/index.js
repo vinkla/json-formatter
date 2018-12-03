@@ -1,9 +1,5 @@
 import linkifyUrls from 'linkify-urls';
-
-const stylesheet = `
-  a:hover { text-decoration: none; }
-  pre { font-size: 13px; line-height: 1.3; tab-size: 2; white-space: pre-wrap; word-wrap: break-word; }
-`;
+import stylesheet from './index.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   if (
