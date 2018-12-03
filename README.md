@@ -1,6 +1,6 @@
-# Yayson ![Chrome Web Store](https://badgen.net/chrome-web-store/v/ckkdlimhmcjmikdlpkmbgfkaikojcbjk)
+# Yayson ![Chrome Web Store](https://badgen.net/chrome-web-store/v/icglamneckmpaleiddbpbfmmjahlkcgj)
 
-> A simple JSON formatter for Google Chrome.
+> A simple JSON formatter extension for Google Chrome.
 
 Format and prettify JSON data to make it human readable in Google Chrome.
 
