@@ -8,7 +8,7 @@ Format and prettify JSON data to make it human readable in Google Chrome.
 
 ### Features
 
-- Formats JSON data using [built-in methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON).
+- Formats JSON data using [built-in methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#Methods).
 - Linkify URLs using the [`linkify-urls`](https://github.com/sindresorhus/linkify-urls#readme) package.
 
 ## Installation
