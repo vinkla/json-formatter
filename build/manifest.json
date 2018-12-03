@@ -1,23 +1,17 @@
 {
   "name": "Yayson",
   "version": "0.1.0",
-  "description": "Simple JSON viewer for the browser.",
-  "homepage_url": "https://github.com/vinkla/yayson",
+  "description": "A simple JSON formatter for the browser.",
+  "homepage_url": "https://github.com/vinkla/yayson#readme",
   "manifest_version": 2,
   "minimum_chrome_version": "69",
   "permissions": [
     "activeTab",
-    "webRequest",
     "<all_urls>"
   ],
   "icons": {
 		"128": "icon.png"
 	},
-  "background": {
-    	"scripts": [
-        "background.js"
-      ]
-  },
   "content_scripts": [
 		{
 			"run_at": "document_start",
