@@ -7,6 +7,7 @@ const stylesheet = `
 
 document.addEventListener('DOMContentLoaded', () => {
   if (
+    !document.body ||
     document.body.children.length !== 1 ||
     document.body.children[0].tagName !== 'PRE'
   ) {
