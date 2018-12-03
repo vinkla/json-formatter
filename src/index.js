@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.normalize();
     const content = document.body.textContent.trim();
     const json = JSON.stringify(JSON.parse(content), null, 2);
-    const data = linkifyUrls(json);
-    document.body.innerHTML = `<pre>${data}</pre>`;
+    document.body.innerHTML = `<pre>${linkifyUrls(json)}</pre>`;
 
     const style = document.createElement('style');
     style.textContent = stylesheet;
