@@ -5,7 +5,6 @@
     "start": "rollup --config --watch",
     "test": "semistandard --verbose **/*.js | snazzy",
     "release": "run-s build update-version",
-    "postinstall": "run-s build",
     "update-version": "VERSION=$(utc-version); echo $VERSION; dot-json build/manifest.json version $VERSION"
   },
   "dependencies": {
