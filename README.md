@@ -1,4 +1,4 @@
-# Yayson ![Chrome Web Store](https://badgen.net/chrome-web-store/v/icglamneckmpaleiddbpbfmmjahlkcgj)
+# Yayson [![Build Status](https://badgen.net/travis/vinkla/yayson/master)](https://travis-ci.com/vinkla/yayson)
 
 > A simple JSON formatter extension for Google Chrome.
 
@@ -13,9 +13,11 @@ Format and prettify JSON data to make it human readable in Google Chrome.
 
 To install the extension in Google Chrome, [visit the Chrome Web Store]().
 
+![Chrome Web Store](https://badgen.net/chrome-web-store/v/icglamneckmpaleiddbpbfmmjahlkcgj)
+
 ## Contributing
 
-Install the dependencies using npm:
+Install the extension dependencies:
 
 ```sh
 $ npm install
