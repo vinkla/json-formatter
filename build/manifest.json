@@ -1,6 +1,6 @@
 {
   "name": "Yayson",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "A simple JSON formatter for Google Chrome.",
   "homepage_url": "https://github.com/vinkla/yayson#readme",
   "manifest_version": 2,

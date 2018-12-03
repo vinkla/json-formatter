@@ -3,7 +3,9 @@
   "scripts": {
     "build": "rollup --config --environment NODE_ENV:production",
     "start": "rollup --config --watch",
-    "test": "semistandard --verbose **/*.js | snazzy"
+    "test": "semistandard --verbose **/*.js | snazzy",
+    "release": "run-s build update-version",
+    "update-version": "VERSION=$(utc-version); echo $VERSION; dot-json build/manifest.json version $VERSION"
   },
   "dependencies": {
     "linkify-urls": "^2.1.0"
@@ -11,6 +13,8 @@
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
+    "dot-json": "^1.0.4",
+    "npm-run-all": "^4.1.5",
     "rollup": "^0.67.4",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.2.0",
@@ -19,7 +23,7 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-terser": "^3.0.0",
     "semistandard": "^13.0.1",
-    "snazzy": "^8.0.0"
-  },
-  "browserslist": "last 2 Chrome versions"
+    "snazzy": "^8.0.0",
+    "utc-version": "^1.1.0"
+  }
 }
