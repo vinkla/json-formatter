@@ -10,17 +10,17 @@
     "activeTab"
   ],
   "icons": {
-		"128": "icon.png"
-	},
+    "128": "icon.png"
+  },
   "content_scripts": [
-		{
-			"run_at": "document_start",
-			"matches": [
-				"<all_urls>"
-			],
-			"js": [
-				"content.js"
-			]
-		}
-	]
+    {
+      "run_at": "document_start",
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
 }

@@ -2,10 +2,12 @@
   "private": true,
   "scripts": {
     "build": "rollup --config --environment NODE_ENV:production",
+    "package": "VERSION=$(utc-version); zip -r bason-$VERSION.zip build",
+    "release": "run-s build version:update package version:reset",
     "start": "rollup --config --watch",
     "test": "semistandard --verbose **/*.js | snazzy",
-    "release": "run-s build update-version",
-    "update-version": "VERSION=$(utc-version); echo $VERSION; dot-json build/manifest.json version $VERSION"
+    "version:reset": "dot-json build/manifest.json version 0.0.0",
+    "version:update": "VERSION=$(utc-version); echo $VERSION; dot-json build/manifest.json version $VERSION"
   },
   "dependencies": {
     "linkify-urls": "^2.1.0"
