@@ -1,9 +1,9 @@
 {
-  "name": "Yayson",
-  "short_name": "Yayson",
+  "name": "Bason",
+  "short_name": "Bason",
   "version": "0.0.0",
   "description": "A simple JSON formatter extension for Google Chrome",
-  "homepage_url": "https://github.com/vinkla/yayson#readme",
+  "homepage_url": "https://github.com/vinkla/bason#readme",
   "manifest_version": 2,
   "minimum_chrome_version": "69",
   "permissions": [
