@@ -14,9 +14,9 @@ Format and prettify JSON data to make it human readable in Google Chrome.
 
 ## Installation
 
-To install the extension in Google Chrome, [visit the Chrome Web Store]().
+To install the extension in Google Chrome, [visit the Chrome Web Store](https://chrome.google.com/webstore/detail/bason/icglamneckmpaleiddbpbfmmjahlkcgj).
 
-![Chrome Web Store](https://badgen.net/chrome-web-store/v/icglamneckmpaleiddbpbfmmjahlkcgj)
+[![Chrome Web Store](https://badgen.net/chrome-web-store/v/icglamneckmpaleiddbpbfmmjahlkcgj)](https://chrome.google.com/webstore/detail/bason/icglamneckmpaleiddbpbfmmjahlkcgj)
 
 ## License
 
