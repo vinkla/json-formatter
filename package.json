@@ -1,12 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "build": "rollup --config --environment NODE_ENV:production",
+    "build": "rollup -c --environment NODE_ENV:production",
     "package": "VERSION=$(utc-version); zip -r bason-$VERSION.zip build",
     "release": "run-s build version package reset",
     "reset": " git checkout build/manifest.json",
-    "start": "rollup --config --watch",
-    "test": "semistandard --verbose | snazzy & run-s build && ava",
+    "start": "rollup -c -w",
+    "test": "semistandard -v | snazzy & run-s build && ava",
     "version": "VERSION=$(utc-version); echo $VERSION; dot-json build/manifest.json version $VERSION"
   },
   "dependencies": {
