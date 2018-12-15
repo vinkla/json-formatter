@@ -13,7 +13,7 @@
     "linkify-urls": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.0",
+    "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.0",
     "cssnano": "^4.1.7",
     "dot-json": "^1.0.4",
