@@ -6,18 +6,20 @@
     "release": "run-s build version package reset",
     "reset": " git checkout build/manifest.json",
     "start": "rollup --config --watch",
-    "test": "semistandard --verbose **/*.js | snazzy",
+    "test": "semistandard --verbose | snazzy & run-s build && ava",
     "version": "VERSION=$(utc-version); echo $VERSION; dot-json build/manifest.json version $VERSION"
   },
   "dependencies": {
     "linkify-urls": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
+    "ava": "^1.0.1",
     "cssnano": "^4.1.7",
     "dot-json": "^1.0.4",
     "npm-run-all": "^4.1.5",
+    "puppeteer": "^1.11.0",
     "rollup": "^0.67.4",
     "rollup-plugin-babel": "^4.1.0",
     "rollup-plugin-commonjs": "^9.2.0",

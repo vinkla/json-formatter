@@ -29,6 +29,6 @@ export default {
       ]
     }),
     (isProduction && terser()),
-    (isProduction && filesize()),
+    (isProduction && filesize())
   ]
 };
