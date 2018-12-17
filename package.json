@@ -3,8 +3,7 @@
   "scripts": {
     "build": "rollup -c --environment NODE_ENV:production",
     "package": "VERSION=$(utc-version); zip -r bason-$VERSION.zip build",
-    "release": "run-s build version package reset",
-    "reset": " git checkout build/manifest.json",
+    "release": "run-s build version package",
     "start": "rollup -c -w",
     "test": "semistandard -v | snazzy & run-s build && ava",
     "version": "VERSION=$(utc-version); echo $VERSION; dot-json build/manifest.json version $VERSION"
