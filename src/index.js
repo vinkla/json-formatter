@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       style.textContent = stylesheet;
       document.head.appendChild(style);
     } catch (error) {
-      // Ignore invalid JSON errors
+      // Prevent invalid JSON errors in the browser console
     }
   }
 });
