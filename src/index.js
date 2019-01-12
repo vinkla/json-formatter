@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const content = document.body.textContent.trim();
       const json = JSON.stringify(JSON.parse(content), null, 2)
         .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;');
+        .replace(/>/g, '&gt;')
+        .replace(/(".+?"):/g, '<strong>$&</strong>');
+
       document.body.innerHTML = `<pre>${linkifyUrls(json)}</pre>`;
 
       const style = document.createElement('style');
