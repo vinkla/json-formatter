@@ -1,5 +1,4 @@
 import { terser } from 'rollup-plugin-terser';
-import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import copy from 'rollup-plugin-cpy';
 import cssnano from 'cssnano';
@@ -8,7 +7,7 @@ import json from 'rollup-plugin-json';
 import postcss from 'rollup-plugin-postcss';
 import resolve from 'rollup-plugin-node-resolve';
 
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = !process.env.ROLLUP_WATCH;
 
 export default {
   input: 'src/index.js',
@@ -20,9 +19,6 @@ export default {
     json(),
     resolve(),
     commonjs(),
-    babel({
-      exclude: 'node_modules/**'
-    }),
     copy({
       dest: 'build',
       files: [
