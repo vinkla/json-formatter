@@ -2,7 +2,7 @@
   "name": "Bason",
   "short_name": "Bason",
   "version": "0.0.0",
-  "description": "A simple JSON formatter extension for Google Chrome.",
+  "description": "A simple JSON viewer extension for Google Chrome.",
   "homepage_url": "https://github.com/vinkla/bason",
   "manifest_version": 2,
   "minimum_chrome_version": "69",
