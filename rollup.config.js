@@ -2,10 +2,10 @@ import { terser } from 'rollup-plugin-terser';
 import commonjs from 'rollup-plugin-commonjs';
 import copy from 'rollup-plugin-cpy';
 import cssnano from 'cssnano';
-import filesize from 'rollup-plugin-filesize';
 import json from 'rollup-plugin-json';
 import postcss from 'rollup-plugin-postcss';
 import resolve from 'rollup-plugin-node-resolve';
+import size from 'rollup-plugin-size';
 
 const isProduction = !process.env.ROLLUP_WATCH;
 
@@ -33,6 +33,6 @@ export default {
       ]
     }),
     (isProduction && terser()),
-    (isProduction && filesize())
+    (isProduction && size())
   ]
 };
