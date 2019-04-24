@@ -1,6 +1,6 @@
 import { terser } from 'rollup-plugin-terser';
 import commonjs from 'rollup-plugin-commonjs';
-import copy from 'rollup-plugin-cpy';
+import copy from 'rollup-plugin-copy';
 import cssnano from 'cssnano';
 import json from 'rollup-plugin-json';
 import postcss from 'rollup-plugin-postcss';
@@ -20,8 +20,8 @@ export default {
     resolve(),
     commonjs(),
     copy({
-      dest: 'build',
-      files: [
+      outputFolder: 'build',
+      targets: [
         'src/icon.png',
         'src/manifest.json'
       ]
