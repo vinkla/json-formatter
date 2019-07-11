@@ -20,10 +20,9 @@ export default {
     resolve(),
     commonjs(),
     copy({
-      outputFolder: 'build',
       targets: [
-        'src/icon.png',
-        'src/manifest.json'
+        { src: 'src/icon.png', dest: 'build' },
+        { src: 'src/manifest.json', dest: 'build' }
       ]
     }),
     postcss({
