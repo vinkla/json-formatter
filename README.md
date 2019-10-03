@@ -14,7 +14,7 @@ Format and prettify JSON data to make it human readable in browsers such as Brav
 
 ## Installation
 
-To install the extension in Google Chrome, [visit the Chrome Web Store](https://chrome.google.com/webstore/detail/bason/icglamneckmpaleiddbpbfmmjahlkcgj).
+To install the extension, [visit the Chrome Web Store](https://chrome.google.com/webstore/detail/bason/icglamneckmpaleiddbpbfmmjahlkcgj).
 
 [![Chrome Web Store](https://badgen.net/chrome-web-store/v/icglamneckmpaleiddbpbfmmjahlkcgj)](https://chrome.google.com/webstore/detail/bason/icglamneckmpaleiddbpbfmmjahlkcgj)
 
