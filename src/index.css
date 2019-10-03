@@ -7,3 +7,14 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+    background-color: #282a36;
+  }
+
+  strong { font-weight: normal; }
+
+  a { color: dodgerblue; }
+}
