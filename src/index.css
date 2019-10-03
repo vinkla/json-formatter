@@ -9,11 +9,9 @@ pre {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #fff;
-    background-color: #282a36;
+    filter: invert(1);
+    background-color: #222;
   }
 
   strong { font-weight: normal; }
-
-  a { color: dodgerblue; }
 }
