@@ -1,4 +1,4 @@
-# Bason [![Build Status](https://badgen.net/github/status/vinkla/bason/master)](https://github.com/vinkla/bason/actions)
+# Bason [![Build Status](https://badgen.net/github/checks/vinkla/bason?label=build&icon=github](https://github.com/vinkla/bason/actions)
 
 <img src="https://user-images.githubusercontent.com/499192/49397331-80c00880-f73b-11e8-9894-c7998d15c407.gif" align="right" alt="Bason" width="280">
 
