@@ -27,11 +27,9 @@ export default {
     }),
     postcss({
       inject: false,
-      plugins: [
-        cssnano()
-      ]
+      plugins: [cssnano()]
     }),
-    (isProduction && terser()),
-    (isProduction && size())
+    isProduction && terser(),
+    isProduction && size()
   ]
 };

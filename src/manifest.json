@@ -6,21 +6,15 @@
   "homepage_url": "https://github.com/vinkla/bason",
   "manifest_version": 2,
   "minimum_chrome_version": "69",
-  "permissions": [
-    "activeTab"
-  ],
+  "permissions": ["activeTab"],
   "icons": {
     "128": "icon.png"
   },
   "content_scripts": [
     {
       "run_at": "document_start",
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "content.js"
-      ]
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
     }
   ]
 }
