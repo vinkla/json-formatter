@@ -6,9 +6,7 @@ test('testing', async (t) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
-  await page.evaluateOnNewDocument(
-    fs.readFileSync('./build/content.js', 'utf8')
-  );
+  await page.evaluateOnNewDocument(fs.readFileSync('./build/bason.js', 'utf8'));
 
   await page.goto('https://api.chucknorris.io/jokes/random');
 
