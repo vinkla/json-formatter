@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        nodejs: [12]
+        nodejs: [13]
 
     name: Node.js ${{ matrix.nodejs }}
 

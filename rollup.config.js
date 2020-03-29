@@ -12,8 +12,8 @@ const isProduction = !process.env.ROLLUP_WATCH;
 export default {
   input: 'src/index.js',
   output: {
-    file: 'build/content.js',
-    format: 'iife'
+    file: 'build/bason.js',
+    format: 'iife',
   },
   plugins: [
     json(),
@@ -22,14 +22,14 @@ export default {
     copy({
       targets: [
         { src: 'src/icon.png', dest: 'build' },
-        { src: 'src/manifest.json', dest: 'build' }
-      ]
+        { src: 'src/manifest.json', dest: 'build' },
+      ],
     }),
     postcss({
       inject: false,
-      plugins: [cssnano()]
+      plugins: [cssnano()],
     }),
     isProduction && terser(),
-    isProduction && size()
-  ]
+    isProduction && size(),
+  ],
 };

@@ -14,7 +14,7 @@
     {
       "run_at": "document_start",
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["bason.js"]
     }
   ]
 }

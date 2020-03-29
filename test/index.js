@@ -2,7 +2,7 @@ const test = require('ava');
 const fs = require('fs');
 const puppeteer = require('puppeteer');
 
-test('testing', async t => {
+test('testing', async (t) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
