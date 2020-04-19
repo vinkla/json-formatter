@@ -21,4 +21,4 @@ To install the extension, [visit the Chrome Web Store](https://chrome.google.com
 
 ## License
 
-[MIT](LICENSE) © [Vincent Klaiber](https://doubledip.se)
+[MIT](LICENSE) © [Vincent Klaiber](https://vinkla.dev/)
