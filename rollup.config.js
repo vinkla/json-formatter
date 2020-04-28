@@ -1,10 +1,10 @@
 import { terser } from 'rollup-plugin-terser';
-import commonjs from 'rollup-plugin-commonjs';
+import commonjs from '@rollup/plugin-commonjs';
 import copy from 'rollup-plugin-copy';
 import cssnano from 'cssnano';
-import json from 'rollup-plugin-json';
+import json from '@rollup/plugin-json';
 import postcss from 'rollup-plugin-postcss';
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
 import size from 'rollup-plugin-size';
 
 const isProduction = !process.env.ROLLUP_WATCH;
