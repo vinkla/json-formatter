@@ -1,12 +1,11 @@
-const test = require('ava');
-const fs = require('fs');
-const puppeteer = require('puppeteer');
+import test from 'ava';
+import { chromium } from 'playwright';
 
 test('testing', async (t) => {
-  const browser = await puppeteer.launch();
+  const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  await page.evaluateOnNewDocument(fs.readFileSync('./build/bason.js', 'utf8'));
+  await page.addInitScript({ path: './build/bason.js' });
 
   await page.goto('https://api.chucknorris.io/jokes/random');
 

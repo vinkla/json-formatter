@@ -1,7 +1,7 @@
 import { terser } from 'rollup-plugin-terser';
 import commonjs from '@rollup/plugin-commonjs';
 import copy from 'rollup-plugin-copy';
-import cssnano from 'cssnano';
+import clean from 'postcss-clean';
 import json from '@rollup/plugin-json';
 import postcss from 'rollup-plugin-postcss';
 import resolve from '@rollup/plugin-node-resolve';
@@ -27,7 +27,7 @@ export default {
     }),
     postcss({
       inject: false,
-      plugins: [cssnano()],
+      plugins: [clean()],
     }),
     isProduction && terser(),
     isProduction && size(),

@@ -1,4 +1,6 @@
-a:hover { text-decoration: none; }
+a:hover {
+  text-decoration: none;
+}
 
 pre {
   font-size: 13px;
@@ -13,5 +15,7 @@ pre {
     background-color: #222;
   }
 
-  strong { font-weight: normal; }
+  strong {
+    font-weight: normal;
+  }
 }
