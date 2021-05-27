@@ -6,17 +6,10 @@ jobs:
   run:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        nodejs: [13]
-
-    name: Node.js ${{ matrix.nodejs }}
+    name: Node.js
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.nodejs }}
-    - run: npm install
-    - run: npm test
-
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: npm install
+      - run: npm test
